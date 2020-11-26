@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Ankita Bagale</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!-- navigation bar -->
     <nav class="navigation container">
-        <div class="nav-brand">IAMDEVELOPER</div>
+        <div class="nav-brand"><a class="link" href="/">IAMDEVELOPER</a></div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
                 <a class="link" href="/">HOME</a>
@@ -29,21 +34,40 @@
         <h1 class="hero-heading">My <span class="heading-inverted">Projects</span></h1>
     </header>
 
-    <ol reversed>
-        <li><article class="article remove-padding">
+    <ol class="olPadding" reversed>
+        
+        <li><article class="article article-padding">
+                <h1>Is your birth date a prime number?</h1>
+                <small>20th November, 2020</small>
+                <p>A CLI app built with nodeJS. A small fun game, to check if birth date of user is a prime number.</p>
+                <a target="_blank" class="link link-primary" href="https://repl.it/@AnkitaBagale/First-Class-prime-number-birth-date?embed=1&output=1">Play Game</a>
+                <a target="_blank" class="link link-secondary" href="https://github.com/AnkitaBagale/AnkitaBagale.CLIApp4">View Source</a>
+            </article>
+        </li>
+        
+        <li><article class="article article-padding">
+                <h1>Were you born in a leap year?</h1>
+                <small>18th November, 2020</small>
+                <p>This a small fun game, to check if user were born in a leap year. This is a CLI app created using Javascript. hosted using repl.it.</p>
+                <a target="_blank" class="link link-primary" href="https://repl.it/@AnkitaBagale/First-Class-Leap-year-exercise?embed=1&output=1">Play Game</a>
+                <a target="_blank" class="link link-secondary" href="https://github.com/AnkitaBagale/AnkitaBagale.CLIApp3">View Source</a>
+            </article>
+        </li>
+        
+        <li><article class="article article-padding">
                 <h1>Are you a harry potter fan?</h1>
-                <small>14th November, 2020</small>
-                <p>A CLI app built with nodeJS. You can send this to your friends and find out who really knows you</p>
+                <small>16th November, 2020</small>
+                <p>A CLI app built with nodeJS. A small fun game, you can send this to your friends and find out who is the biggest fan of Harry Potter</p>
                 <a target="_blank" class="link link-primary" href="https://repl.it/@AnkitaBagale/First-Class-3?embed=1&output=1">Play Game</a>
                     <a target="_blank" class="link link-secondary" href="https://github.com/AnkitaBagale/AnkitaBagale-Quiz2">View Source</a>
             </article>
         </li>
 
         <li>
-            <article class="article remove-padding">
+            <article class="article article-padding">
                 <h1>How well do you know me?</h1>
                 <small>14th November, 2020</small>
-                <p>A CLI app built with nodeJS. You can send this to your friends and find out who really knows you</p>
+                <p>A CLI app built with nodeJS. You can send this to your friends and find out who knows you better</p>
                 <a target="_blank" class="link link-primary" href="https://repl.it/@AnkitaBagale/First-Class-2?embed=1&output=1">Play Game</a>
                 <a target="_blank" class="link link-secondary" href="https://github.com/AnkitaBagale/AnkitaBagale-Quiz1">View Source</a>
             </article>
@@ -52,6 +76,21 @@
         
     </ol>
     
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-header">Social Media Presence</div>
+        <ul class="list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/AnkitaBagale"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/AnkitaB1108"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/ankita-bagale1108"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+        </ul>
+    </footer>
 
 </body>
 
