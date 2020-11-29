@@ -226,3 +226,7 @@ i.fab::before {
     color: white;
     border-radius: 0.5rem;
 }
+.wraplinktext li a{
+    word-wrap: break-word;
+ 
+}
