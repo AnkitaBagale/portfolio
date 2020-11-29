@@ -51,9 +51,6 @@ body{
     padding-right: 0.2rem;
 
 }
-.backCTAContainer{
-padding: 2rem 1rem 0rem;
-}
 
 .nav-brand .link{
     padding: 0;
@@ -211,6 +208,14 @@ i.fab::before {
     text-align: left;
     font-weight: 400;
 }
+.backCTAContainer{
+    padding: 2rem 1rem 0rem;
+}
+.backCTAbottom{
+    padding: 0rem 1rem 2rem;
+    }
+
+
 
 .blog .font-bold{
     font-weight: bold;
@@ -228,5 +233,4 @@ i.fab::before {
 }
 .wraplinktext li a{
     word-wrap: break-word;
- 
 }
