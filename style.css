@@ -6,9 +6,9 @@ body{
 }
 
 :root{
-    --primary-color:#DB2777;
-    --secondary-color: #FCA5A5;
+    --primary-color:#BE185D;    ;
     --off-white: #FCE7F3;
+    --faint-gray: rgb(208, 211, 214);
     --dark-gray: #6B7280;
     --moreDarkGray: rgb(48, 52, 58);
 }
@@ -34,13 +34,25 @@ body{
 .link-primary {
     background-color: var(--primary-color);
     border-radius: 0.5rem;
-    color: white
+    color: white;
 }
 
 .link-secondary{
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
+}
+
+.link-backArrow{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.link-backArrow i{
+    padding-right: 0.2rem;
+
+}
+.backCTAContainer{
+padding: 2rem 1rem 0rem;
 }
 
 .nav-brand .link{
@@ -129,7 +141,7 @@ body{
 }
 .article-padding h1{
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 6  00;
     margin: 0rem;
     color: var(--moreDarkGray); 
 }
@@ -138,16 +150,15 @@ body{
 }
 .olPadding{
     margin-block-start: 1rem;
-    margin-block-end: 5rem;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 2rem;
     padding-inline-end: 0.5rem;
 }
-.olPadding a{
+.fontOfNumbers a{
     font-size: 16px;
 }
-.olPadding li{
+.fontOfNumbers li{
     font-size: 1.3rem;
     color: var(--moreDarkGray); 
 }
@@ -158,12 +169,12 @@ body{
 
 /* footer */
 .footer{
-    height: 108px;
+    height: 128px;
     width: 100%;
     max-width: 600px;
     box-sizing: border-box;
     background-color: var(--primary-color);
-    padding: 1rem 1rem;
+    padding: 2rem 1rem 1rem;
     text-align: center;
     color: white;
     border-top-right-radius: 1rem;
@@ -182,4 +193,36 @@ ul{
 
 i.fab::before {
  font-size: 2rem;
+}
+
+/* blog detail page styling */
+.blog .blog-img{
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+    padding: 3rem 0rem 2rem;
+}
+.blog h1{
+    font-size: 2.5rem;
+    margin: 0;
+}
+.blog h2, h3{
+    text-align: left;
+    font-weight: 400;
+}
+
+.blog .font-bold{
+    font-weight: bold;
+}
+
+.blog .bgcolorGray{
+    background-color: var(--faint-gray);
+}
+
+.blog .highlightBlack {
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    border-radius: 0.5rem;
 }

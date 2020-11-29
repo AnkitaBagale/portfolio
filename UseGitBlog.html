@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Git Blog | Ankita Bagale</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <meta name="author" content="Ankita Bagale">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav class="navigation container">
+        <div class="nav-brand"><a class="link" href="/">IAMDEVELOPER</a></div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">HOME</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">PROJECTS</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/blogs.html">BLOGS</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="backCTAContainer ow">
+        <a class="link link-backArrow" href="/blogs.html"><i class="fas fa-chevron-left"></i>Go Back</a>
+    </div>
+    <section class="section blog ow">
+    <h1>Use Git - Simplified For Beginners</h1>
+    <img class="blog-img" src="/images/usegitblogcover.png" alt="Blog-Cover-Image">
+    <p><small>29th November, 2020 | 4 min read</small><br>
+        When we start to code for any project it is important to keep track of all our project versions and changes in source code files. Hence, knowing how to use git is important.
+    </p>
+    <p class="font-bold">
+        This is a beginner friendly article to help you with basic workflow of git.
+    </p>
+    <h2>How Git works?</h2>
+    <p>
+        Suppose we have a project. Its first version has file1 and file2. Git stores these two files as snapshots.
+        Now as part of Second Version of the project, we modified file2.
+        Now git will not store the file1 again. Instead, it will just refer to file1 snapshot from version1 as "version2 file1" is identical to "version1 file1".
+        And as file2 is modified, it will store file2's snapshot.
+        This way git keeps track of versions of the project.
+    </p>
+    <h2>Git has main 3 states in which file goes through:</h2>
+    <ol class="olPadding">
+        <li><p><span class="font-bold">Modified:</span> A file is modified when we modify it but did not store it to local database.</P></li>
+        <li><p><span class="font-bold">Staged:</span> A file is staged when we marked a modified file in its current version which is ready to store into local database.</p></li>
+            
+        <li><p><span class="font-bold">Committed:</span> A file is committed file when we safely store it in local database.</p></li>
+    </ol>
+    <h2>These states lead to 3 main sections:</h2>
+    <ol class="olPadding">
+        <li><p><span class="font-bold">Working tree:</span> This is your workspace, where you copy files(of current version) from remote repository and use or modify those files to make changes for next version.</P></li>
+        <li><p><span class="font-bold">Staging area:</span> It is a file in your git directory, that stores modified files which we want to store into local database.</P></li>
+        <li><p><span class="font-bold">Git directory:</span> It is kind of a folder which stores the information and files of your project.</P></li>
+    </ol>
+    <h2>Basic workflow in git:</h2>
+    <ol class="olPadding">
+        <li><p>We <span class="font-bold">modify files</span> in working tree</P>
+        </li>
+        <li><p>Selectively <span class="font-bold">stage</span> just those <span class="font-bold">changes</span> which we want to be part of our next version.</P>
+        </li>
+        <li><p>We do a <span class="font-bold">commit</span>, which takes files from staging area and <span class="font-bold">stores as snapshots</span> permanently in Git repository.</P>
+        </li>
+    </ol>
+    <h2>In short:</h2>
+    <ul class="olPadding">
+        <li><p>If particular version of a file is in git directory, it is considered as <span class="font-bold">committed</span></P></li>
+        <li><p>If it has been modified and added in staging area, it is called as <span class="font-bold">staged</span></P></li>
+        <li><p>If it is changed since its last checkout and has not been staged, it is <span class="font-bold">modified</span></P></li>
+    </ul>
+
+    <h2 class="font-bold">Go through below steps to use git in command line:</h2>
+    <p>If you have your project repository in github and you want to update your code in your system and push the code changes again to your github account, that's when git commands can be used.</p>
+    <p class="font-bold">Install Git:</p>
+    <p>You need to install git in your machine before using it. Open the terminal window and type below command for ubuntu/debian:</p>
+    <p class="highlightBlack">$ sudo apt install git-all</p>
+
+    <p>For other OS, please <a href="https://git-scm.com/downloads">click here</a> to check out the commands.</p>
+
+    <p class="font-bold">Login in Git:</p>
+    <p>The first thing you should do when you install Git is to set your user name and email address.</p>
+    <p class="highlightBlack">$ git config --global user.name “DummyUsername”<br>
+        $ git config --global user.email “demoEmail@mail.com”</p>
+    
+    <p>You can always check if your information is saved. Use <span class="bgcolorGray">gedit</span> command. This will open a text file having username and email id.</p>
+    <p class="highlightBlack">$ gedit .gitconfig</p>
+
+    <p class="font-bold">Create Git Directory:</p>
+    <p>You will need a workspace(New folder) to copy your github repository in your machine. So we are going to use <span class="bgcolorGray">mkdir</span> command to create workspace. We will make newly created workspace as current directory to proceed.</p>
+    <p class="highlightBlack">$ mkdir DummyName<br>
+        $ cd DummyName/</p>
+
+    <p>If you already have a project directory and you want to start controlling it with Git, you first need to go to that project’s directory and initialise it with git.</p>
+    <p class="highlightBlack">$ cd ProjectDirectory_path<br>
+        $ git init</p>
+
+    <p class="font-bold">Clone Remote repository:</p>
+    <p>To work on your project present in github account, you will need to get a copy of your project's git repository in your system. For this, use <span class="bgcolorGray">clone</span> command to copy repository in your workspace.</p>
+    <p class="highlightBlack">$ git clone “Enter here url of your remote repository”</p>
+
+
+    <p>You can check that new folder with project's repository name is created inside the workspace folder by using <span class="bgcolorGray">ls</span> command.</p>
+    <p class="highlightBlack">$ ls</p>
+
+    <p>Make our newly created repository folder as current directory to proceed.</p>
+    <p class="highlightBlack">$ cd DumyRepoName</p>
+
+    <p>You are ready to code now. You can open the folder(newly created repository in workspace) in code editor. You can create/update your files and write/update your code.
+    This code will be saved in your desktop only. When we are done with the coding, we will want to update code in our github account.</p>
+    
+    <p class="font-bold">Final Step: add, commit, push</p>
+    <p>Using a <span class="bgcolorGray">add file_name</span> command you can add your code changes to staging area. This command states that you want to include file_name's changes included in your next commit.</p>
+    <p class="highlightBlack">$ git add .</p>
+
+    <p><span class="bgcolorGray">.</span> is used to include all files</p>
+    <p>You can use <span class="bgcolorGray">status</span> command to check the files state.</p>
+    <p class="highlightBlack">$ git status</p>
+
+    <p>Use <span class="bgcolorGray">commit</span> command to commit the code with comments. This will take files from staging area and store the files snapshots in git repository using <span class="bgcolorGray">git push</span> command.</p>
+    <p class="highlightBlack">$ git commit -m “your comment goes here”<br>
+        $ git push</p>
+
+
+    <p>Yay! We have our files updated in git repository. It was that easy if we understand the concepts and git commands.
+    I will recommend you to go to official documentation and always use git help command for more information:</p>
+    <ul class="olPadding">
+        <li><a href="https://git-scm.com/doc"><p>https://git-scm.com/doc</p></a></li>
+        <li><a href="https://guides.github.com/activities/hello-world/"><p>https://guides.github.com/activities/hello-world/</p></a></li>
+    </ul>
+
+
+
+
+</section>
+   
+
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-header">Social Media Presence</div>
+        <ul class="list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/AnkitaBagale"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/AnkitaB1108"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/ankita-bagale1108"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+        </ul>
+    </footer>
+    
+
+
+</body>
+
+</html>
