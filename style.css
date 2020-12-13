@@ -188,7 +188,7 @@ ul{
     padding-inline-start: 0px;
 }
 
-i.fab::before {
+i.fab {
  font-size: 2rem;
 }
 
