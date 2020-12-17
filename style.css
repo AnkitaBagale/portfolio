@@ -147,8 +147,8 @@ body{
 }
 .olPadding{
     margin-block-start: 1rem;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0.7rem;
+    margin-inline-end: 0.7rem;
     padding-inline-start: 2rem;
     padding-inline-end: 0.5rem;
 }
