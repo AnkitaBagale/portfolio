@@ -142,7 +142,7 @@ body{
     margin: 0rem;
     color: var(--moreDarkGray); 
 }
-.article date{
+.article time{
     font-size: 14px;
 }
 .olPadding{
