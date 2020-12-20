@@ -30,6 +30,10 @@ body{
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
+.article .link{
+    display: inline-block;
+    margin-bottom: 1rem ;
+}
 
 .link-primary {
     background-color: var(--primary-color);
@@ -117,7 +121,8 @@ body{
 }
 
 .section P{
-    text-align: left;
+    text-align: justify;
+
 }
 .section{
     text-align: center;
@@ -161,7 +166,7 @@ body{
 }
 
 .article {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 /* footer */
@@ -181,7 +186,7 @@ body{
     font-weight: bold;
 }
 .footer .link{
-    color: white
+    color: white;
 }
 
 ul{
@@ -234,3 +239,4 @@ i.fab {
 .wraplinktext li a{
     word-wrap: break-word;
 }
+
