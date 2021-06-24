@@ -1,84 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Ankita Bagale</title>
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
     <meta name="author" content="Ankita Bagale">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
 
     <!-- navigation bar -->
-    <nav class="navigation container">
-        <div class="nav-brand"><a class="link" href="/">IAMDEVELOPER</a></div>
-        <ul class="list-non-bullet nav-pills">
-            <li class="list-item-inline">
-                <a class="link link-active" href="/">HOME</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="/projects.html">PROJECTS</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="/blogs.html">BLOGS</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="nav-wrapper">
+        <nav class="navigation container">
 
-    <!-- Hero image banner -->
-    <header class="hero">
-        <img class="hero-img" src="/images/hero2.svg" />
-        <h1 class="hero-heading"><span style="font-size:2.2rem;">Hi there! </span><br> <span style="font-weight: 300; font-size: 1.8rem;">I'm Ankita </span><span class="heading-inverted">A Web Developer</span></h1>
-    </header>
+            <ul class="list-non-bullet nav-pills">
+                <li class="list-item-inline">
+                    <a class="link link-active" href="/">HOME</a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="/projects.html">PROJECTS</a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="/blogs.html">BLOGS</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
-    <section class="section ow">
-        <h1>About Me</h1>
-        <p>I'm currently working in Cognizant as a QA Tester. <br>
-            I started learning web development out of curiosity. Now I want to pursue my career in this field as it's said -<br>“If passion drives you, let reason hold the reins.”– Benjamin Franklin<br>
-        </p>
-    </section>
+    <div class="page-content-wrapper">
 
-    <section class="section">
-        <h1>Technologies</h1>
-        <p>I'm familiar with HTML5, CSS3, Git, JavaScript, NodeJS, Jira and Web Hosting.</p>
-    </section>
+        <!-- Hero image banner -->
+        <header class="hero">
+            <img class="hero-img" src="/images/hero2.svg" />
+            <h1 class="hero-heading"><span style="font-size:2.2rem;">Hi there! </span><br> <span
+                    style="font-weight: 300; font-size: 1.8rem;">I'm Ankita </span><span class="heading-inverted">A Web
+                    Developer</span></h1>
+        </header>
 
-    <section class="section ow">
-        <h1>Projects</h1>
-        <p>I would like to showcase my work and thus, you can see my projects hosted online</p>
-        <a class="link link-primary" href="/projects.html">Browse Projects</a>
-    </section>
+        <section class="section ow">
+            <h1>About Me</h1>
+            <p>I'm a Full Stack Web Developer. I have 3 years of work experience as a QA Tester. <br>
+                I started learning web development out of curiosity.<br>Now I want to pursue my career in this field as
+                it's
+                said -<br><br>
+                <em>“If passion drives you, let reason hold the reins.”– Benjamin Franklin</em>
+                <br>
+            </p>
+        </section>
 
-    <section class="section">
-        <h1>Blogs</h1>
-        <p>I'm also working on some technical and non techincal blogs. I would like to document my journey of learning.</p>
-        <a class="link link-secondary" href="/blogs.html">Read Blogs</a>
-    </section>
+        <section class="section">
+            <h1>Technologies</h1>
+            <p>My field of expertise includes below skills:</p>
+            <ul class="text-left">
+                <li>
+                    <b>Frontend:</b> JavaScript, React, CSS, React-Redux toolkit, TypeScript
+                </li>
+                <li>
+                    <b>Backend:</b>
+                    Node JS, Express JS, Mongoose, MongoDB, JWT
+                </li>
+                <li>
+                    <b>Others:</b>
+                    Jira, GitHub, Git
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="section ow">
+            <h1>Projects</h1>
+            <p>I would like to showcase my skills through my work and thus, you can see my projects hosted online</p>
+            <a class="link link-primary" href="/projects.html">Browse Projects</a>
+        </section>
+
+        <section class="section">
+            <h1>Blogs</h1>
+            <p>I'm also working on some technical and non techincal blogs. I would like to document my journey of
+                learning.
+            </p>
+            <a class="link link-secondary" href="/blogs.html">Read Blogs</a>
+        </section>
+    </div>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-header">Connect with me on!</div>
-        <ul class="list-non-bullet">
-            <li class="list-item-inline">
-                <a target="_blank" class="link" href="https://github.com/AnkitaBagale"><i class="fab fa-github" aria-hidden="true"></i></a>
-            </li>
-            <li class="list-item-inline">
-                <a target="_blank" class="link" href="https://twitter.com/AnkitaB1108"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li class="list-item-inline">
-                <a target="_blank" class="link" href="https://www.linkedin.com/in/ankita-bagale1108"><i class="fab fa-linkedin-in"></i></a>
-            </li>
-        </ul>
-    </footer>
-
-
+    <div class="footer-wrapper">
+        <footer class="footer">
+            <div class="footer-header">Connect with me on!</div>
+            <ul class="list-non-bullet">
+                <li class="list-item-inline">
+                    <a target="_blank" class="link" href="https://github.com/AnkitaBagale"><i class="fab fa-github"
+                            aria-hidden="true"></i></a>
+                </li>
+                <li class="list-item-inline">
+                    <a target="_blank" class="link" href="https://twitter.com/AnkitaB1108"><i
+                            class="fab fa-twitter"></i></a>
+                </li>
+                <li class="list-item-inline">
+                    <a target="_blank" class="link" href="https://www.linkedin.com/in/ankita-bagale1108"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
 
 </body>
 
