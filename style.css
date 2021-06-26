@@ -83,6 +83,7 @@ body {
 	width: 100%;
 	max-width: 600px;
 	margin: auto;
+	box-sizing: border-box;
 }
 .navigation .nav-brand {
 	font-weight: bold;
