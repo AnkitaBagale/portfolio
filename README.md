@@ -1,12 +1,50 @@
-# Portfolio
+### Installation:
 
-I am Ankita Bagale. I am learning web development.
-My skill:
-1. html
-2. Css
-3. Javascript
-4. Github, Git
-5. Netlify
-6. Jira
+1. Initializing Next App with Latest Version of Tailwind
 
-This is my personal portfolio. Created using pure html and css.
+   ```
+   npx create-next-app --example with-tailwindcss ./
+   ```
+
+1. TypeScript Setup
+
+   Create a typescript config file
+
+   ```
+   touch tsconfig.json
+   ```
+
+   Install required Packages -
+
+   ```
+   npm install --save-dev typescript @types/react @types/node
+   ```
+
+   Changed the existing file extenstions from .js to .tsx and .ts.
+
+1. Eslint setup
+
+   Add `"lint": "next lint"` to the existing scripts in package.json
+
+   ```
+   "scripts": {
+   "lint": "next lint"
+   }
+   ```
+
+   Install required Packages-
+
+   ```
+   npm install --save-dev eslint eslint-config-next
+   //and after that
+   npm run lint
+   ```
+
+1. Prettier setup-
+
+   ```
+   npm i -D prettier eslint-plugin-prettier eslint-config-prettier
+   ```
+
+   Add .prettierrc.js file and include options in this file according to your needs.
+   [checkout this](https://prettier.io/docs/en/options.html).
