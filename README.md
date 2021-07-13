@@ -6,22 +6,6 @@
    npx create-next-app --example with-tailwindcss ./
    ```
 
-1. TypeScript Setup
-
-   Create a typescript config file
-
-   ```
-   touch tsconfig.json
-   ```
-
-   Install required Packages -
-
-   ```
-   npm install --save-dev typescript @types/react @types/node
-   ```
-
-   Changed the existing file extenstions from .js to .tsx and .ts.
-
 1. Eslint setup
 
    Add `"lint": "next lint"` to the existing scripts in package.json
