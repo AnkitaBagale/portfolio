@@ -11,7 +11,16 @@ module.exports = {
     },
     colors: {
       pastelPink: {
-        default: 'hsl(0, 76%, 75%)'
+        default: '#fcbcbc',
+        dark: 'hsl(0, 91%, 68%)'
+      },
+      pastelBlue: {
+        transparent: 'rgb(255, 255, 255, 0.2)',
+        lightest: '#ecf7f9',
+        lighter: '#d9eff2',
+        light: '#b3dfe5',
+        default: 'hsl(187, 50%, 60%)',
+        dark: '#41b0bf'
       },
       transparent: 'transparent',
       current: 'currentColor',
@@ -22,7 +31,14 @@ module.exports = {
       red: colors.rose,
       yellow: colors.amber
     },
-    extend: {}
+    extend: {
+      spacing: {
+        29: '9.375rem',
+        30: '9.875rem',
+        31: '10.375rem',
+        32: '10.875rem'
+      }
+    }
   },
   variants: {
     extend: {}
