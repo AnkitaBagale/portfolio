@@ -9,6 +9,7 @@ module.exports = {
       sans: 'Jost, sans-serif',
       custom: 'Pacifico, cursive'
     },
+    boxShadow: { inner: 'inset 0 -30px 30px -30px hsl(187, 50%, 60%)' },
     colors: {
       pastelPink: {
         default: '#fcbcbc',
@@ -37,7 +38,8 @@ module.exports = {
         30: '9.875rem',
         31: '10.375rem',
         32: '10.875rem'
-      }
+      },
+      width: { '6/7': 'calc(100% - 9.875rem)' }
     }
   },
   variants: {

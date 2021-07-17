@@ -19,7 +19,7 @@ const navlinks = [
 const NavBar = () => {
   const [showNav, setShowNav] = useState(false);
   return (
-    <nav className=" border-b text-base box-border bg-white flex justify-between items-center md:px-0 md:mx-4 px-4 py-6 sticky top-0 md:static">
+    <nav className=" border-b text-base box-border bg-white flex justify-between items-center md:px-0 md:mx-4 px-4 py-6 sticky top-0 md:static z-20">
       <div className="font-custom text-2xl tracking-wide text-pastelBlue-default">
         ankita bagale
       </div>
@@ -46,7 +46,7 @@ const NavBar = () => {
         <ul
           className={`md:flex md:h-auto md:w-auto md:static items-center ${
             showNav
-              ? 'flex flex-col py-10 px-5 w-screen h-screen box-border fixed top-0 left-0 bottom-0 bg-white z-0'
+              ? 'flex flex-col py-10 px-5 w-screen h-screen box-border fixed top-0 left-0 bottom-0 bg-white'
               : 'hidden'
           }`}
         >
@@ -54,7 +54,7 @@ const NavBar = () => {
             return (
               <li
                 key={title}
-                className="py-4 md:py-0 md:px-4 text-sm last:px-0 uppercase"
+                className="py-4 md:py-0 md:px-4 text-sm last:pr-0 uppercase"
               >
                 <Link href={link}>
                   <a>{title}</a>
