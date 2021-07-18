@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Footer from './footer';
 import NavBar from './navBar';
 
 const Layout = ({ children }) => {
@@ -9,6 +10,7 @@ const Layout = ({ children }) => {
       </Head>
       <NavBar />
       <main className="px-4 py-8 md:py-16">{children}</main>
+      <Footer />
     </div>
   );
 };

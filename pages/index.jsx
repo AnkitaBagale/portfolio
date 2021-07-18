@@ -2,66 +2,224 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '../components/layout';
+import ProjectCard from '../components/projectCard';
+import BlogCard from '../components/blogCard';
+import { useState } from 'react';
+
+const featuredProjects = [
+  {
+    title: 'U&I Store',
+    description: 'Ecommerce Application for Sketching Related Products',
+    date: '6th May 2021',
+    skills: ['React', 'Express', 'JWT', 'MongoDB', 'Paypal']
+  },
+  {
+    title: 'U&I Talks',
+    description: 'A Social Media App to Post Learnings',
+    date: '15th Jun 2021',
+    skills: ['React', 'Redux', 'Express', 'JWT', 'MongoDB', 'ChakraUi']
+  },
+  {
+    title: 'U&I Video Library',
+    description: 'YouTube Inspired Learning App for Artists',
+    date: '17th May 2021',
+    skills: ['React', 'Express', 'JWT', 'MongoDB']
+  }
+];
+
+const featuredBlogs = [
+  {
+    title: 'Reconciliation in React 🤯',
+    description:
+      'This blog gives you basic understanding of how React works behind the hood.',
+    date: '15th Jun 2021',
+    duration: '4 min read'
+  },
+  {
+    title: 'JavaScript: Errors, Types, Properties 🐞',
+    description:
+      'This blogs tells about types of errors in Javascript, how to read them, understand and use those errors in our code.',
+    date: '21st Mar 2021',
+    duration: '13 min read'
+  },
+  {
+    title: 'Introduction to JavaScript Selectors 🔍',
+    description: `Let's learn how we can select elements more specifically using "querySelector" method.`,
+    date: '14th Jan 2021',
+    duration: '5 min read'
+  }
+];
+
+const myAllSkills = [
+  {
+    image: '/images/js.svg',
+    title: 'Javascript'
+  },
+  {
+    image: '/images/react.svg',
+    title: 'React'
+  },
+  {
+    image: '/images/ts.svg',
+    title: 'TypeScript'
+  },
+  {
+    image: '/images/next.svg',
+    title: 'NextJs'
+  },
+  {
+    image: '/images/redux.svg',
+    title: 'Redux'
+  },
+  {
+    image: '/images/jest.svg',
+    title: 'Jest'
+  },
+  {
+    image: '/images/nodejs.svg',
+    title: 'Node Js'
+  },
+  {
+    image: '/images/express.svg',
+    title: 'Express'
+  },
+  {
+    image: '/images/mongoose.svg',
+    title: 'Mongoose JS'
+  },
+  {
+    image: '/images/mongodb.svg',
+    title: 'MongoDB'
+  },
+  {
+    image: '/images/jwt.svg',
+    title: 'JWT'
+  },
+  {
+    image: '/images/chakra.svg',
+    title: 'ChakraUi'
+  },
+  {
+    image: '/images/tailwind.svg',
+    title: 'Tailwind'
+  },
+  {
+    image: '/images/html.svg',
+    title: 'HTML5'
+  },
+  {
+    image: '/images/css.svg',
+    title: 'CSS3'
+  },
+  {
+    image: '/images/github.svg',
+    title: 'Github'
+  },
+  {
+    image: '/images/git.svg',
+    title: 'Git'
+  },
+  {
+    image: '/images/jira.svg',
+    title: 'Jira'
+  }
+];
 
 const Home = () => {
+  const [showMoreSkills, setShowSkills] = useState(false);
+
+  const loadSkills = () => {
+    setShowSkills(flag => !flag);
+  };
   return (
     <Layout>
       <Head>
         <title>Home | Ankita Bagale</title>
       </Head>
-      <div className="md:flex text-center md:text-left justify-center md:justify-between">
-        <div className="md:w-6/7 md:pr-6">
-          <h1 className="text-4xl leading-normal">
-            <span className="inline-block text-gray-500 pr-4">Hi there!</span>
-            <br className="hidden md:block" />
-            <span className="pr-3">I'm Ankita</span>
-            <br className="md:hidden" />
-            <span className="text-pastelBlue-dark">A Full Stack Developer</span>
-          </h1>
-          <p className="text-justify text-lg pt-3">
-            I have 3 years of work experience as a QA Tester. I started learning
-            web development out of curiosity. Now I want to pursue my career in
-            this field as it's said -<br />
-            <em>
-              “If passion drives you, let reason hold the reins.” – Benjamin
-              Franklin
-            </em>
-          </p>
-        </div>
-        <div className="ml-3 mt-8 md:mt-0 w-30 h-30 relative inline-block">
-          <span className="inline-block bg-pastelBlue-lightest rounded-full -top-3 -left-3 w-32 h-32 absolute "></span>
-          <span className="inline-block bg-pastelBlue-lighter rounded-full absolute -top-2 -left-2  w-31 h-31"></span>
-          <span className="inline-block bg-pastelBlue-light rounded-full absolute -top-1 -left-1 w-30 h-30"></span>
-          <Image
-            className="rounded-full absolute top-0"
-            src="/images/dp2.jpg"
-            width={150}
-            height={150}
-          />
-          <span className="inline-block bg-pastelBlue-transparent rounded-full absolute -top-1 -left-1 w-30 h-30"></span>
-        </div>
+      <div className="text-center md:text-left md:w-6/7">
+        <h1 className="text-4xl leading-normal font-custom">
+          <span className="inline-block text-gray-500 pr-4">Hi there!</span>
+          <br className="hidden md:block" />
+          <span className="pr-3">I'm Ankita</span>
+          <br className="md:hidden" />
+          <span className="text-pastelBlue-dark">A Full Stack Developer</span>
+        </h1>
+        <p className="text-justify text-lg pt-3">
+          I have 3 years of work experience as a QA Tester. I started learning
+          web development out of curiosity. Now I want to pursue my career in
+          this field as it's said -<br />
+          <em>
+            “If passion drives you, let reason hold the reins.” – Benjamin
+            Franklin
+          </em>
+        </p>
       </div>
+
       <div>
-        <h2 className="mt-16 mb-8 text-4xl inline-block text-pastelBlue-dark">
+        <h2 className="text-center md:text-left mt-24 mb-8 text-4xl font-custom">
           My Work
         </h2>
-        <div className="grid grid-col-1 md:grid-cols-3">
-          <div className="bg-pastelBlue-lighter rounded-lg p-4">
-            <h3 className="text-lg font-semibold">U&I Store</h3>
-            <p>Ecommerce application for Sketching related products</p>
-            <span className="text-sm py-0.5 px-4 mr-2 bg-pastelBlue-default text-white rounded-2xl inline-block">
-              React
-            </span>
-            <span className="text-sm py-0.5 px-4 mr-2 bg-pastelBlue-default text-white rounded-2xl inline-block">
-              Express
-            </span>
-            <span className="text-sm py-0.5 mt-2 px-4 mr-2 bg-pastelBlue-default text-white rounded-2xl inline-block">
-              MongoDB
-            </span>
-            <span className="text-sm py-0.5 mt-2 px-4 bg-pastelBlue-default text-white rounded-2xl inline-block">
-              Paypal
-            </span>
-          </div>
+
+        <div className="grid grid-col-1 md:grid-cols-3 gap-8">
+          {featuredProjects.map(projectDetails => (
+            <ProjectCard
+              key={projectDetails.title}
+              projectDetails={projectDetails}
+            />
+          ))}
+        </div>
+        <div className="text-center">
+          <Link href="/projects">
+            <a className="inline-block bg-pastelBlue-dark hover:bg-pastelBlue-darker transition delay-100 ease-in-out text-base font-medium text-white py-1 px-4 mt-7 rounded-3xl">
+              View All
+            </a>
+          </Link>
+        </div>
+      </div>
+
+      <div>
+        <h2 className="text-center md:text-left mt-24 mb-8 text-4xl font-custom">
+          My Blogs
+        </h2>
+
+        <div className="grid grid-col-1 md:grid-cols-3 gap-8">
+          {featuredBlogs.map(blogDetails => (
+            <BlogCard key={blogDetails.title} blogDetails={blogDetails} />
+          ))}
+        </div>
+        <div className="text-center">
+          <Link href="/blogs">
+            <a className="inline-block bg-pastelBlue-dark hover:bg-pastelBlue-darker transition delay-100 ease-in-out text-base font-medium text-white py-1 px-4 mt-7 rounded-3xl">
+              View All
+            </a>
+          </Link>
+        </div>
+      </div>
+
+      <div>
+        <h2 className="text-center md:text-left mt-24 mb-8 text-4xl font-custom">
+          My Skills
+        </h2>
+
+        <div
+          className={`grid grid-cols-3 md:grid-cols-6 gap-8 md:justify-items-start  overflow-hidden ${
+            showMoreSkills ? '' : 'max-h-40 md:max-h-20'
+          }`}
+        >
+          {myAllSkills.map(skill => (
+            <div key={skill.title} className="flex flex-col items-center">
+              <Image width={50} height={50} src={skill.image} />
+              <p className="text-sm pt-1.5 font-custom">{skill.title}</p>
+            </div>
+          ))}
+        </div>
+        <div className="text-center">
+          <button
+            onClick={loadSkills}
+            className="inline-block bg-pastelBlue-dark hover:bg-pastelBlue-darker transition delay-100 ease-in-out text-base font-medium text-white py-1 px-4 mt-7 rounded-3xl"
+          >
+            {showMoreSkills ? 'View Less' : 'View All'}
+          </button>
         </div>
       </div>
     </Layout>

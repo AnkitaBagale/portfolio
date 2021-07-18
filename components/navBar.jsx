@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import { useAnchors } from '../pages/_app';
 
 const navlinks = [
   {
@@ -18,9 +19,10 @@ const navlinks = [
 
 const NavBar = () => {
   const [showNav, setShowNav] = useState(false);
+  const { footerRef } = useAnchors();
   return (
     <nav className=" border-b text-base box-border bg-white flex justify-between items-center md:px-0 md:mx-4 px-4 py-6 sticky top-0 md:static z-20">
-      <div className="font-custom text-2xl tracking-wide text-pastelBlue-default">
+      <div className="font-brand text-2xl tracking-wide text-pastelBlue-default">
         ankita bagale
       </div>
       <div
@@ -44,7 +46,7 @@ const NavBar = () => {
 
       {
         <ul
-          className={`md:flex md:h-auto md:w-auto md:static items-center ${
+          className={`md:flex md:h-auto md:w-auto md:static items-center font-custom ${
             showNav
               ? 'flex flex-col py-10 px-5 w-screen h-screen box-border fixed top-0 left-0 bottom-0 bg-white'
               : 'hidden'
@@ -54,7 +56,7 @@ const NavBar = () => {
             return (
               <li
                 key={title}
-                className="py-4 md:py-0 md:px-4 text-sm last:pr-0 uppercase"
+                className="py-4 md:py-0 md:px-4 text-sm uppercase"
               >
                 <Link href={link}>
                   <a>{title}</a>
@@ -62,6 +64,18 @@ const NavBar = () => {
               </li>
             );
           })}
+          <li className="py-4 md:py-0 md:px-4 md:pr-0">
+            <button
+              onClick={() =>
+                footerRef?.current?.scrollIntoView({
+                  behavior: 'smooth'
+                })
+              }
+              className="text-sm uppercase"
+            >
+              Contact
+            </button>
+          </li>
         </ul>
       }
     </nav>

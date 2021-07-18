@@ -6,22 +6,28 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: 'Jost, sans-serif',
-      custom: 'Pacifico, cursive'
+      custom: 'Jost, sans-serif',
+      brand: 'Pacifico, cursive',
+      sans: 'Poppins, sans-serif'
     },
-    boxShadow: { inner: 'inset 0 -30px 30px -30px hsl(187, 50%, 60%)' },
     colors: {
       pastelPink: {
         default: '#fcbcbc',
         dark: 'hsl(0, 91%, 68%)'
       },
       pastelBlue: {
-        transparent: 'rgb(255, 255, 255, 0.2)',
+        transparent: 'rgb(102, 192, 204,0.2)',
         lightest: '#ecf7f9',
         lighter: '#d9eff2',
         light: '#b3dfe5',
-        default: 'hsl(187, 50%, 60%)',
-        dark: '#41b0bf'
+        default: '#66c0cc',
+        dark: '#41b0bf',
+        darker: '#3b9eac'
+      },
+      cardColor: {
+        pista: 'rgb(181, 220, 205)',
+        pink: 'rgb(252, 188, 188)',
+        yellow: 'rgb(252, 188, 123)'
       },
       transparent: 'transparent',
       current: 'currentColor',
