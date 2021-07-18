@@ -6,6 +6,7 @@ import ProjectCard from '../components/projectCard';
 import BlogCard from '../components/blogCard';
 import { useState } from 'react';
 import AboutCard from '../components/aboutCard';
+import { getMySkills } from '../lib/getMySkills';
 
 const featuredProjects = [
   {
@@ -50,15 +51,6 @@ const featuredBlogs = [
     duration: '5 min read'
   }
 ];
-
-export const getStaticProps = async () => {
-  const { skills } = (await import('../lib/mySkills.json')).default;
-  return {
-    props: {
-      myAllSkills: skills
-    }
-  };
-};
 
 const Home = ({ myAllSkills }) => {
   const [showMoreSkills, setShowSkills] = useState(false);
@@ -152,3 +144,12 @@ const Home = ({ myAllSkills }) => {
 };
 
 export default Home;
+
+export const getStaticProps = async () => {
+  const skills = await getMySkills();
+  return {
+    props: {
+      myAllSkills: skills
+    }
+  };
+};
