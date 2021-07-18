@@ -6,7 +6,6 @@ import ProjectCard from '../components/projectCard';
 import BlogCard from '../components/blogCard';
 import { useState } from 'react';
 import AboutCard from '../components/aboutCard';
-import { getMySkills } from '../lib/skills';
 
 const featuredProjects = [
   {
@@ -53,8 +52,7 @@ const featuredBlogs = [
 ];
 
 export const getStaticProps = async () => {
-  const { skills } = await getMySkills();
-
+  const { skills } = (await import('../lib/mySkills.json')).default;
   return {
     props: {
       myAllSkills: skills
