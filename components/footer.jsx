@@ -14,6 +14,7 @@ const Footer = () => {
         <a
           className="px-4 text-gray-400 hover:text-pastelBlue-default"
           target="_blank"
+          rel="noreferrer"
           href="https://github.com/AnkitaBagale"
         >
           <i className="fab fa-github text-2xl" aria-hidden="true"></i>
@@ -21,6 +22,7 @@ const Footer = () => {
         <a
           className="px-4 text-gray-400 hover:text-pastelBlue-default"
           target="_blank"
+          rel="noreferrer"
           href="https://twitter.com/AnkitaB1108"
         >
           <i className="fab fa-twitter text-2xl"></i>
@@ -28,6 +30,7 @@ const Footer = () => {
         <a
           className="px-4 text-gray-400 hover:text-pastelBlue-default"
           target="_blank"
+          rel="noreferrer"
           href="https://www.linkedin.com/in/ankita-bagale1108"
         >
           <i className="fab fa-linkedin-in text-2xl"></i>

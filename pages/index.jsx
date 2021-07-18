@@ -130,7 +130,12 @@ const Home = ({ myAllSkills }) => {
         >
           {myAllSkills.map(skill => (
             <div key={skill.title} className="flex flex-col items-center">
-              <Image width={50} height={50} src={skill.image} />
+              <Image
+                alt={skill.title}
+                width={50}
+                height={50}
+                src={skill.image}
+              />
               <p className="text-sm pt-1.5 font-custom">{skill.title}</p>
             </div>
           ))}
