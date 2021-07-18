@@ -4,7 +4,7 @@ const Footer = () => {
   const { footerRef } = useAnchors();
   return (
     <div
-      className="mt-20 py-10 px-4 md:px-0 md:mx-4 border-t flex flex-col md:flex-row justify-between items-center"
+      className="mt-20 py-4 px-4 md:px-0 md:mx-4 border-t flex flex-col md:flex-row justify-between items-center"
       ref={footerRef}
     >
       <span>

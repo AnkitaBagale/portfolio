@@ -5,6 +5,8 @@ import Layout from '../components/layout';
 import ProjectCard from '../components/projectCard';
 import BlogCard from '../components/blogCard';
 import { useState } from 'react';
+import AboutCard from '../components/aboutCard';
+import { getMySkills } from '../lib/skills';
 
 const featuredProjects = [
   {
@@ -50,110 +52,30 @@ const featuredBlogs = [
   }
 ];
 
-const myAllSkills = [
-  {
-    image: '/images/js.svg',
-    title: 'Javascript'
-  },
-  {
-    image: '/images/react.svg',
-    title: 'React'
-  },
-  {
-    image: '/images/ts.svg',
-    title: 'TypeScript'
-  },
-  {
-    image: '/images/next.svg',
-    title: 'NextJs'
-  },
-  {
-    image: '/images/redux.svg',
-    title: 'Redux'
-  },
-  {
-    image: '/images/jest.svg',
-    title: 'Jest'
-  },
-  {
-    image: '/images/nodejs.svg',
-    title: 'Node Js'
-  },
-  {
-    image: '/images/express.svg',
-    title: 'Express'
-  },
-  {
-    image: '/images/mongoose.svg',
-    title: 'Mongoose JS'
-  },
-  {
-    image: '/images/mongodb.svg',
-    title: 'MongoDB'
-  },
-  {
-    image: '/images/jwt.svg',
-    title: 'JWT'
-  },
-  {
-    image: '/images/chakra.svg',
-    title: 'ChakraUi'
-  },
-  {
-    image: '/images/tailwind.svg',
-    title: 'Tailwind'
-  },
-  {
-    image: '/images/html.svg',
-    title: 'HTML5'
-  },
-  {
-    image: '/images/css.svg',
-    title: 'CSS3'
-  },
-  {
-    image: '/images/github.svg',
-    title: 'Github'
-  },
-  {
-    image: '/images/git.svg',
-    title: 'Git'
-  },
-  {
-    image: '/images/jira.svg',
-    title: 'Jira'
-  }
-];
+export const getStaticProps = async () => {
+  const { skills } = await getMySkills();
 
-const Home = () => {
+  return {
+    props: {
+      myAllSkills: skills
+    }
+  };
+};
+
+const Home = ({ myAllSkills }) => {
   const [showMoreSkills, setShowSkills] = useState(false);
 
   const loadSkills = () => {
     setShowSkills(flag => !flag);
   };
+
   return (
     <Layout>
       <Head>
         <title>Home | Ankita Bagale</title>
       </Head>
-      <div className="text-center md:text-left md:w-6/7">
-        <h1 className="text-4xl leading-normal font-custom">
-          <span className="inline-block text-gray-500 pr-4">Hi there!</span>
-          <br className="hidden md:block" />
-          <span className="pr-3">I'm Ankita</span>
-          <br className="md:hidden" />
-          <span className="text-pastelBlue-dark">A Full Stack Developer</span>
-        </h1>
-        <p className="text-justify text-lg pt-3">
-          I have 3 years of work experience as a QA Tester. I started learning
-          web development out of curiosity. Now I want to pursue my career in
-          this field as it's said -<br />
-          <em>
-            “If passion drives you, let reason hold the reins.” – Benjamin
-            Franklin
-          </em>
-        </p>
-      </div>
+
+      <AboutCard />
 
       <div>
         <h2 className="text-center md:text-left mt-24 mb-8 text-4xl font-custom">

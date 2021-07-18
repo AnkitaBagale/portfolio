@@ -9,7 +9,8 @@ const Layout = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      <main className="px-4 py-8 md:py-16">{children}</main>
+      <main className="px-4 py-8 md:py-16 min-h-80vh">{children}</main>
+
       <Footer />
     </div>
   );

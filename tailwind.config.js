@@ -45,7 +45,8 @@ module.exports = {
         31: '10.375rem',
         32: '10.875rem'
       },
-      width: { '6/7': 'calc(100% - 9.875rem)' }
+      width: { '6/7': 'calc(100% - 9.875rem)' },
+      minHeight: { '80vh': 'calc(100vh - 16rem)' }
     }
   },
   variants: {

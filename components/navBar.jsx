@@ -1,3 +1,4 @@
+import { useRouter } from 'next/dist/client/router';
 import Link from 'next/link';
 import { useState } from 'react';
 import { useAnchors } from '../pages/_app';
@@ -20,10 +21,14 @@ const navlinks = [
 const NavBar = () => {
   const [showNav, setShowNav] = useState(false);
   const { footerRef } = useAnchors();
+  const router = useRouter();
+
   return (
     <nav className=" border-b text-base box-border bg-white flex justify-between items-center md:px-0 md:mx-4 px-4 py-6 sticky top-0 md:static z-20">
       <div className="font-brand text-2xl tracking-wide text-pastelBlue-default">
-        ankita bagale
+        <Link href="/">
+          <a>ankita bagale</a>
+        </Link>
       </div>
       <div
         className={`md:hidden ${
@@ -56,7 +61,9 @@ const NavBar = () => {
             return (
               <li
                 key={title}
-                className="py-4 md:py-0 md:px-4 text-sm uppercase"
+                className={`py-4 md:py-0 md:px-4 text-sm uppercase hover:text-black ${
+                  router.pathname === link ? 'text-black' : 'text-gray-500'
+                }`}
               >
                 <Link href={link}>
                   <a>{title}</a>
@@ -64,7 +71,7 @@ const NavBar = () => {
               </li>
             );
           })}
-          <li className="py-4 md:py-0 md:px-4 md:pr-0">
+          <li className="py-4 md:py-0 md:px-4 md:pr-0 text-gray-500 hover:text-black">
             <button
               onClick={() =>
                 footerRef?.current?.scrollIntoView({
