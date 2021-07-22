@@ -5,6 +5,9 @@ import { getProjects } from '../lib/getData';
 const Projects = ({ myProjects }) => {
   return (
     <Layout>
+      <Head>
+        <title>Projects | Ankita Bagale</title>
+      </Head>
       <div>
         <h2 className="text-center md:text-left mb-2 text-4xl font-custom">
           Projects

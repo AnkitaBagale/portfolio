@@ -5,6 +5,9 @@ import { getBlogs } from '../lib/getData';
 const Blogs = ({ myBlogs }) => {
   return (
     <Layout>
+      <Head>
+        <title>Blogs | Ankita Bagale</title>
+      </Head>
       <div>
         <h2 className="text-center md:text-left mb-2 text-4xl font-custom">
           Blogs

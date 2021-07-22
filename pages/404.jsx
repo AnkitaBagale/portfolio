@@ -1,9 +1,13 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import { Layout } from '../components/layout';
 
 const Custom404 = () => {
   return (
     <Layout>
+      <Head>
+        <title>Page Not Found</title>
+      </Head>
       <div className="text-center mt-8">
         <h2 className="text-2xl font-light">
           <span className="font-medium py-2 pr-4 border-r-2 border-black">
