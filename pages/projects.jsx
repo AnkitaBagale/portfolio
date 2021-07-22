@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Layout } from '../components/layout';
 import { ProjectDetailCard } from '../components/projectDetailCard';
 import { getProjects } from '../lib/getData';

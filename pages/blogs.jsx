@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { BlogDetailCard } from '../components/blogDetailCard';
 import { Layout } from '../components/layout';
 import { getBlogs } from '../lib/getData';
