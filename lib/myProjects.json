@@ -1,0 +1,200 @@
+{
+  "projects": [
+    {
+      "title": "U&I Store",
+      "shortDescription": "Ecommerce Application for Sketching Related Products",
+      "description": "Created this app in MERN stack, used own component library for CSS. Core features include Cart and Wishlist Management, PayPal sandboxing for payment, apply coupon feature, address management, search/filter/sort functionality, JWT based Authentication",
+      "date": "6th May 2021",
+      "skills": ["MERN", "JWT", "Razorpay"],
+      "link": "https://u-and-i-store.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/UandIEcommerce"
+    },
+    {
+      "title": "U&I Talks",
+      "shortDescription": "A Social Media App to Post Learnings",
+      "description": "Created this app in MERN stack, used Redux Toolkit for state management, Chakra UI for CSS, Cloudinary for image upload. Core features include Create post with text and image, Posting shared content, Post Feed, Search User, Notification Management, Follow/Unfollow Users, Like Post, Update User Profile and profile image, JWT based Authentication",
+      "date": "15th Jun 2021",
+      "skills": ["MERN", "Redux", "JWT", "ChakraUi"],
+      "link": "https://u-and-i-talks.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/UandISocialMedia/tree/development"
+    },
+    {
+      "title": "U&I Quiz",
+      "shortDescription": "Fun Quiz app based on Sketching",
+      "description": "Created this app in MERN stack, used TypeScript with React, Chakra UI for CSS, Unit tests in JEST. Core features include Multiple Quizzes, Score at the end of the Quiz play, Review answers feature, Personal dashboard for attempted quizzes using Local Storage, JWT based Authentication",
+      "date": "23rd May 2021",
+      "skills": ["MERN", "TypeScript", "Jest", "JWT"],
+      "link": "https://u-and-i-quiz.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/uandiquiz/tree/development"
+    },
+    {
+      "title": "U&I Video Library",
+      "shortDescription": "YouTube inspired Learning App",
+      "description": "Created this app in MERN stack, used own component library for CSS. Core features include Search video, Filter by category, Playlist Management, Notes Management, Learning History, Share video to U&I talks, JWT based Authentication",
+      "date": "17th May 2021",
+      "skills": ["MERN", "JWT"],
+      "link": "https://u-and-i-video-library.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/UandIVideoLibrary/tree/development"
+    },
+    {
+      "title": "U&I – Component Library to build UI faster",
+      "date": "28th March, 2021",
+      "description": "Created component library in HTML, Vanilla CSS and Vanilla JS. It has 15 Reusable components with different variations of each component. Each component supports dark theme and light theme. Most of the components have live demo examples.",
+      "link": "https://u-and-i.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/UandIComponentLibrary"
+    },
+
+    {
+      "title": "Keep Notes",
+      "date": "6th March, 2021",
+      "description": "App is created in React JS. Tried to create a clone of Google keep app.",
+      "link": "https://keepnote-ankitab.netlify.app/",
+      "source": "https://github.com/AnkitaBagale/KeepNotes"
+    },
+    {
+      "title": "Blog Listing App",
+      "date": "22nd February, 2021",
+      "description": "App is created in React JS. Used dev.to api to fetch blogs. Added a search functionality to search blogs.",
+      "link": "https://blogs-ankitab.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/blogListingPage"
+    },
+
+    {
+      "title": "Birthdate Palindrome Check",
+      "date": "3rd January, 2021",
+      "description": "Created an app in React-JS to check if entered birthdate is Palindrome. If it is not palindrome, then it will show nearest palindrome date and by how many days it got missed.",
+      "link": "https://bdatepalindrome.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/BirthdatePalindromeCheck"
+    },
+
+    {
+      "title": "Fun with triangles",
+      "date": "29th December, 2020",
+      "description": "Created an app in Vanilla JS to make learning about triangles fun.",
+      "link": "https://fun-with-triangles.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/funWithTriangles"
+    },
+
+    {
+      "title": "Cash Register Manager",
+      "date": "23rd December, 2020",
+      "description": "Created app using React-JS and Vanilla-JS. User can enter the bill amount and cash given by the customer and know minimum number of notes to return.",
+      "link": "https://cashregister-ankitab.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/cashRegisterManager",
+
+      "link2": "https://yt9pw.csb.app/",
+      "sourceLink2": "https://codesandbox.io/s/yt9pw"
+    },
+
+    {
+      "title": "Stock Returns Calculator",
+      "date": "9th January, 2021",
+      "description": "This app is created using vanilla js which shows how much profit or loss we are having on our stocks. If user has gained more than 50%, it makes the theme of app happy and if user has lost more than 50%, it makes the theme of app sad",
+      "link": "https://stockreturnscalculator.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/stockProfitLoss"
+    },
+
+    {
+      "title": "Is your birthdate Lucky?",
+      "date": "25th December, 2020",
+      "description": "Created this app using React-JS and Vanilla-JS, which tells if birthdate is lucky or not.",
+      "link": "https://isyourbirthdaylucky.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/isYourBirthdayLucky",
+
+      "link2": "https://rv9hp.csb.app/",
+      "sourceLink2": "https://codesandbox.io/s/rv9hp"
+    },
+
+    {
+      "title": "Best Web Series",
+      "date": "10th December, 2020",
+      "description": "This is a fun app to check best series of listed genres. This app is created using React-js.",
+      "link": "https://bestwebseries-ankitab.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/BestSeries"
+    },
+
+    {
+      "title": "Fun with Flags",
+      "date": "8th December, 2020",
+      "description": "This is a fun app to check flags' country by searching or clicking on listed flags on the page. Created with React-JS.",
+      "link": "https://funwithflag-ankitab.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/FunWithFlags"
+    },
+
+    {
+      "title": "Talk Like Pirates",
+      "date": "4th December, 2020",
+      "description": "This is a translation app to convert English to Pirates language. Check this app to talk like Pirates with your friends.",
+      "link": "https://talkpirates-ankitab.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/talkLikePirates"
+    },
+
+    {
+      "title": "Talk Like Minions",
+      "date": "2nd December, 2020",
+      "description": "This is a translation app to convert english to banana language. Minions speak in banana language in Animated movie Despicable me. This is a fun game to talk like minions in friends.",
+      "link": "https://talkbanana-ankitab.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/TalkBanana-Lesson4"
+    },
+
+    {
+      "title": "Slideshow",
+      "date": "20th December, 2020",
+      "description": "I have created a slideshow using React-JS and Vanilla-JS. We can show image and text in a slide. On clicking on arrows, slides get scrolled.",
+      "link": "https://lcu7w.csb.app/",
+      "sourceLink": "https://codesandbox.io/s/lcu7w",
+
+      "link2": "https://4y5g9.csb.app/",
+      "sourceLink2": "https://codesandbox.io/s/4y5g9"
+    },
+
+    {
+      "title": "Were you born in a leap year?(React Js)",
+      "date": "16th December, 2020",
+      "description": "This a small fun game, to check if user were born in a leap year. This app is created using React-JS.",
+      "link": "https://s6c8e.csb.app/",
+      "sourceLink": "https://codesandbox.io/s/s6c8e"
+    },
+
+    {
+      "title": "Were you born in a leap year?(Vanilla JS)",
+      "date": "15th December, 2020",
+      "description": "This a small fun game, to check if user were born in a leap year. This app is created using Vanilla-JS.",
+      "link": "https://leapyearfinder-ankitab.netlify.app/",
+      "sourceLink": "https://github.com/AnkitaBagale/wereYouBornInLeapYear"
+    },
+
+    {
+      "title": "Were you born in a leap year?",
+      "date": "18th November, 2020",
+      "description": "This a small fun game, to check if user were born in a leap year. This is a CLI app created using Javascript. hosted using repl.it.",
+
+      "link": "https://repl.it/@AnkitaBagale/First-Class-Leap-year-exercise?embed=1&output=1",
+      "sourceLink": "https://github.com/AnkitaBagale/AnkitaBagale.CLIApp3"
+    },
+
+    {
+      "title": "Is your birth date a prime number?",
+      "date": "20th November, 2020",
+      "description": "A CLI app built with nodeJS. A small fun game, to check if birth date of user is a prime number.",
+      "link": "https://repl.it/@AnkitaBagale/First-Class-prime-number-birth-date?embed=1&output=1",
+      "sourceLink": "https://github.com/AnkitaBagale/AnkitaBagale.CLIApp4"
+    },
+
+    {
+      "title": "Are you a harry potter fan?",
+      "date": "16th November, 2020",
+      "description": "A CLI app built with nodeJS. A small fun game, you can send this to your friends and find out who is the biggest fan of Harry Potter",
+      "link": "https://repl.it/@AnkitaBagale/First-Class-3?embed=1&output=1",
+      "sourceLink": "https://github.com/AnkitaBagale/AnkitaBagale-Quiz2"
+    },
+
+    {
+      "title": "How well do you know me?",
+      "date": "14th November, 2020",
+      "description": "A CLI app built with nodeJS. You can send this to your friends and find out who knows you better",
+      "link": "https://repl.it/@AnkitaBagale/First-Class-2?embed=1&output=1",
+      "sourceLink": "https://github.com/AnkitaBagale/AnkitaBagale-Quiz1"
+    }
+  ]
+}

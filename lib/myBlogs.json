@@ -1,0 +1,49 @@
+{
+  "blogs": [
+    {
+      "title": "Reconciliation in React 🤯",
+      "description": "This blog gives you basic understanding of how React works behind the hood.",
+      "shortDescription": "This blog gives you basic understanding of how React works behind the hood.",
+      "date": "15th Jun 2021",
+      "duration": "4 min read",
+      "link": "https://ankitab.hashnode.dev/reconciliation-in-react"
+    },
+    {
+      "title": "JavaScript: Errors, Types, Properties 🐞",
+      "description": "This blog tells about types of errors in Javascript, how to read them, understand and use those errors in our code",
+      "shortDescription": "This blogs tells about types of errors in Javascript, how to read them, understand and use those errors in our code.",
+      "date": "21st Mar 2021",
+      "duration": "13 min read",
+      "link": "https://ankitab.hashnode.dev/javascript-errors-types-properties"
+    },
+    {
+      "title": "Introduction to JavaScript Selectors 🔍",
+      "description": "This blog gives you understanding how method 'querySelector' works. And how we can select elements more specifically using this method.",
+      "shortDescription": "Let's learn how we can select elements more specifically using 'querySelector' method.",
+      "date": "14th Jan 2021",
+      "duration": "5 min read",
+      "link": "https://ankitab.hashnode.dev/introduction-to-javascript-selectors"
+    },
+    {
+      "title": "Let's Learn Functions in Javascript 📚",
+      "description": "Functions are one of the fundamental building blocks in JavaScript. This article will help you in understanding Functions better and to use them in your programs.",
+      "date": "20th Dec 2020",
+      "duration": "7 min read",
+      "link": "https://ankitab.hashnode.dev/introduction-to-javascript-selectors"
+    },
+    {
+      "title": "What is API.... 🤔",
+      "description": "It is important that we know what basically happens when we include anything new in our programs. I hope beginners will find this article helpful when working with APIs.",
+      "date": "4th Dec 2020",
+      "duration": "6 min read",
+      "link": "https://ankitab.hashnode.dev/introduction-to-javascript-selectors"
+    },
+    {
+      "title": "Use Git - Simplified For Beginners 💡",
+      "description": "This is a beginner friendly article to help you with basic workflow of git. After reading this, you will get a basic idea what git is, when, where and how to use it.",
+      "date": "29th Nov 2020",
+      "duration": "7 min read",
+      "link": "https://ankitab.hashnode.dev/introduction-to-javascript-selectors"
+    }
+  ]
+}

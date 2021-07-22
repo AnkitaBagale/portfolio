@@ -13,16 +13,20 @@ export const ProjectCard = ({ projectDetails }) => {
       ))}
       <br />
       <a
-        href=""
+        target="_blank"
+        rel="noreferrer"
+        href={projectDetails.link}
         className="inline-block cursor-pointer bg-pastelBlue-dark hover:bg-pastelBlue-darker transition delay-100 ease-in-out text-xs font-medium text-white py-1.5 px-4 mt-4 mr-2 rounded-3xl"
       >
         View Live
       </a>
       <a
-        href=""
+        target="_blank"
+        rel="noreferrer"
+        href={projectDetails.sourceLink}
         className="inline-block cursor-pointer border-2 border-pastelBlue-dark hover:bg-pastelBlue-darker hover:border-pastelBlue-darker transition delay-100 ease-in-out text-xs font-medium hover:text-white py-1 px-4 mt-4 rounded-3xl"
       >
-        GitHub
+        View Source
       </a>
     </div>
   );

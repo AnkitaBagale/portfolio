@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const FeaturedProjects = ({ projects }) => {
   return (
     <div>
-      <h2 className="text-center md:text-left mt-24 mb-8 text-4xl">My Work</h2>
+      <h2 className="text-center md:text-left mt-24 mb-8 text-3xl">My Work</h2>
 
       <div className="grid grid-col-1 md:grid-cols-3 gap-8">
         {projects.map(projectDetails => (

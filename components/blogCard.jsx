@@ -8,7 +8,9 @@ export const BlogCard = ({ blogDetails }) => {
       <p className="pt-2 flex-grow">{blogDetails.shortDescription}</p>
       <div>
         <a
-          href=""
+          target="_blank"
+          rel="noreferrer"
+          href={blogDetails.link}
           className="inline-block cursor-pointer bg-pastelBlue-dark hover:bg-pastelBlue-darker transition delay-100 ease-in-out text-xs font-medium text-white py-1.5 px-4 mt-2 mr-2 rounded-3xl"
         >
           Read

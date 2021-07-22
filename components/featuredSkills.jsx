@@ -9,7 +9,7 @@ export const FeaturedSkills = ({ myAllSkills }) => {
   };
   return (
     <div>
-      <h2 className="text-center md:text-left mt-24 mb-8 text-4xl">
+      <h2 className="text-center md:text-left mt-24 mb-8 text-3xl">
         My Skills
       </h2>
 
@@ -20,7 +20,7 @@ export const FeaturedSkills = ({ myAllSkills }) => {
       >
         {myAllSkills.map(skill => (
           <div key={skill.title} className="flex flex-col items-center">
-            <Image alt={skill.title} width={50} height={50} src={skill.image} />
+            <Image alt={skill.title} width={40} height={40} src={skill.image} />
             <p className="text-sm pt-1.5 font-custom">{skill.title}</p>
           </div>
         ))}

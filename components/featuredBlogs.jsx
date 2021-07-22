@@ -3,7 +3,7 @@ import Link from 'next/link';
 export const FeaturedBlogs = ({ blogs }) => {
   return (
     <div>
-      <h2 className="text-center md:text-left mt-24 mb-8 text-4xl">My Blogs</h2>
+      <h2 className="text-center md:text-left mt-24 mb-8 text-3xl">My Blogs</h2>
 
       <div className="grid grid-col-1 md:grid-cols-3 gap-8">
         {blogs.map(blogDetails => (
