@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "title": "Reconciliation in React 🤯",
+      "description": "This blog gives you basic understanding of how React works behind the hood.",
+      "shortDescription": "This blog gives you basic understanding of how React works behind the hood.",
+      "date": "15th Jun 2021",
+      "duration": "4 min read",
+      "link": "https://ankitab.hashnode.dev/reconciliation-in-react"
+    },
+    {
+      "title": "JavaScript: Errors, Types, Properties 🐞",
+      "description": "This blogs tells about types of errors in Javascript, how to read them, understand and use those errors in our code.",
+      "shortDescription": "This blogs tells about types of errors in Javascript, how to read them, understand and use those errors in our code.",
+      "date": "21st Mar 2021",
+      "duration": "13 min read",
+      "link": "https://ankitab.hashnode.dev/javascript-errors-types-properties"
+    },
+    {
+      "title": "Introduction to JavaScript Selectors 🔍",
+      "description": "Let's learn how we can select elements more specifically using 'querySelector' method.",
+      "shortDescription": "Let's learn how we can select elements more specifically using 'querySelector' method.",
+      "date": "14th Jan 2021",
+      "duration": "5 min read",
+      "link": "https://ankitab.hashnode.dev/introduction-to-javascript-selectors"
+    }
+  ]
+}

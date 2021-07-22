@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import Footer from './footer';
-import NavBar from './navBar';
+import { Footer } from './footer';
+import { NavBar } from './navBar';
 
-const Layout = ({ children }) => {
+export const Layout = ({ children }) => {
   return (
     <div className="max-w-4xl w-full mx-auto">
       <Head>
@@ -15,5 +15,3 @@ const Layout = ({ children }) => {
     </div>
   );
 };
-
-export default Layout;

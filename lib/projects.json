@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "title": "U&I Store",
+      "shortDescription": "Ecommerce Application for Sketching Related Products",
+      "description": "Ecommerce Application for Sketching Related Products",
+      "date": "6th May 2021",
+      "skills": ["MERN", "JWT", "Razorpay"]
+    },
+    {
+      "title": "U&I Talks",
+      "shortDescription": "A Social Media App to Post Learnings",
+      "description": "A Social Media App to Post Learnings",
+      "date": "15th Jun 2021",
+      "skills": ["MERN", "Redux", "JWT", "ChakraUi"]
+    },
+    {
+      "title": "U&I Quiz",
+      "shortDescription": "Fun Quiz app based on Sketching",
+      "description": "Fun Quiz app based on Sketching",
+      "date": "23rd May 2021",
+      "skills": ["MERN", "TypeScript", "Jest", "JWT"]
+    },
+    {
+      "title": "U&I Video Library",
+      "description": "YouTube Inspired Learning App for Artists",
+      "date": "17th May 2021",
+      "skills": ["MERN", "JWT"]
+    }
+  ]
+}

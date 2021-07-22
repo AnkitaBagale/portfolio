@@ -1,6 +1,6 @@
 import { useAnchors } from '../pages/_app';
 
-const Footer = () => {
+export const Footer = () => {
   const { footerRef } = useAnchors();
   return (
     <div
@@ -39,5 +39,3 @@ const Footer = () => {
     </div>
   );
 };
-
-export default Footer;

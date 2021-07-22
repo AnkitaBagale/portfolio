@@ -18,7 +18,7 @@ const navlinks = [
   }
 ];
 
-const NavBar = () => {
+export const NavBar = () => {
   const [showNav, setShowNav] = useState(false);
   const { footerRef } = useAnchors();
   const router = useRouter();
@@ -88,5 +88,3 @@ const NavBar = () => {
     </nav>
   );
 };
-
-export default NavBar;

@@ -1,6 +1,6 @@
-const AboutCard = () => {
+export const AboutCard = () => {
   return (
-    <div className="text-center md:text-left md:w-6/7">
+    <div className="text-center md:text-left">
       <h1 className="text-4xl leading-normal font-custom">
         <span className="inline-block text-gray-500 pr-4">Hi there!</span>
         <br className="hidden md:block" />
@@ -20,5 +20,3 @@ const AboutCard = () => {
     </div>
   );
 };
-
-export default AboutCard;
